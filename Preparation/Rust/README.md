@@ -33,7 +33,7 @@ $ rustup update nightly
 $ cargo install racer
 
 
-Two route to complete Rust on Vim are shown.
+Two routes to complete Rust on Vim are shown.
 1) With Deoplete
 
 To combine Racer with Deoplete, Rust source code is needed.
