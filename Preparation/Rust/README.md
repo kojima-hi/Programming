@@ -32,7 +32,10 @@ $ rustup update nightly
 
 $ cargo install racer
 
+
+Two route to complete Rust on Vim are shown.
 1) With Deoplete
+
 To combine Racer with Deoplete, Rust source code is needed.
 Download it.
 $ cd ~/programs/othermade/sources/
@@ -52,7 +55,7 @@ $ vi ~/.config/nvim/dein.toml
           let g:deoplete#sources#rust#documentation_max_height=20
         '''
 
-see https://github.com/sebastianmarkow/deoplete-rust
+[ref] https://github.com/sebastianmarkow/deoplete-rust
 
 2) with vim-racer
 ```
