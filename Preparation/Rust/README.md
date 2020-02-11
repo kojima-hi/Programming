@@ -57,6 +57,7 @@ $ vi ~/.config/nvim/dein.toml
           let g:racer_cmd = "~/.cargo/bin/racer"
           let g:racer_experimental_completer = 1
           let g:racer_insert_paren = 1
+        '''
 
 2) With Deoplete
 
@@ -80,7 +81,5 @@ $ vi ~/.config/nvim/dein.toml
         '''
 
 [ref] https://github.com/sebastianmarkow/deoplete-rust
-
-'''
 
 ```
