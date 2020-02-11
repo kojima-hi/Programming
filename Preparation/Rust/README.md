@@ -24,14 +24,26 @@ $ conda install libssh2
 ## Construct developing environment
 ```
 To complete code, use Racer.
-To install Racer which uses functions of nightly version
+
+Instal Rust of nightly version
 $ brew install sdl2
 $ rustup update
 $ rustup override set nightly
 $ rustup update nightly
 
+Install Racer
 $ cargo install racer
 
+Get Rust source 
+$ rustup toolchain add nightly
+$ rustup component add rust-src
+$ vi ~/.bash_profile
+    add the following:
+        export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+$ source ~/.bash_profile
+
+Check working
+$ racer complete std::io::B 
 
 Two ways to complete Rust on Vim are shown.
 1) With Deoplete
