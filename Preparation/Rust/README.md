@@ -46,7 +46,19 @@ Check working
 $ racer complete std::io::B 
 
 Two ways to complete Rust on Vim are shown.
-1) With Deoplete
+1) with vim-racer
+$ vi ~/.config/nvim/dein.toml
+    add the following:
+        [[plugins]]
+        repo = 'racer-rust/vim-racer'
+        on_ft = ['rust']
+        hook_add = '''
+          set hidden
+          let g:racer_cmd = "~/.cargo/bin/racer"
+          let g:racer_experimental_completer = 1
+          let g:racer_insert_paren = 1
+
+2) With Deoplete
 
 To combine Racer with Deoplete, Rust source code is needed.
 Download it.
@@ -69,17 +81,6 @@ $ vi ~/.config/nvim/dein.toml
 
 [ref] https://github.com/sebastianmarkow/deoplete-rust
 
-2) with vim-racer
-$ vi ~/.config/nvim/dein.toml
-    add the following:
-        [[plugins]]
-        repo = 'racer-rust/vim-racer'
-        on_ft = ['rust']
-        hook_add = '''
-          set hidden
-          let g:racer_cmd = "~/.cargo/bin/racer"
-          let g:racer_experimental_completer = 1
-          let g:racer_insert_paren = 1
 '''
 
 ```
