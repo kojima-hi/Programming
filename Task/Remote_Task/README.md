@@ -1,6 +1,8 @@
 # Remote Task
 Execute task on remote server by a command execution on a local server.
 
+![aaa](./test.c)
+
 ## fabric2 (Python3)
 `fabric2` is version 2 of `fabric`, which is a module in Python2.
 In Python3, `faric2` is treated as `fabric`.
